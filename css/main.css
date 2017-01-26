@@ -1,0 +1,84 @@
+body {
+    background: #f9f8f1;
+}
+
+.input-area {
+    padding-top: 10px;
+}
+
+input#nickname {
+    min-width: 300px;
+}
+
+textarea#comment-input {
+    width: 100%;
+}
+
+#submit {
+    margin-top: 5px;
+}
+
+.btn-x {
+    padding: 1px 6px;
+}
+
+.reply_mode {
+    display: none;
+}
+
+.reply_mode.active {
+    display: initial;
+}
+
+label {
+    margin-top: 15px;
+}
+
+.comment {
+    border: 1px solid #e6aaaa;
+    margin-top: 5px;
+    border-radius: 2px;
+}
+
+.comment > a {
+    padding: 5px;
+}
+
+.nickname {
+    color: #b32929;
+    padding: 8px;
+}
+
+.comment .btn-x {
+    margin: 6px;
+}
+
+.comment-text {
+    background: #ffe4ce;
+    padding: 8px;
+}
+
+.comment[data-level="0"] {
+    margin-left: 0;
+    margin-top: 15px
+}
+
+.comment[data-level="1"] {
+    margin-left: 30px;
+}
+
+.comment[data-level="2"] {
+    margin-left: 60px;
+}
+
+.comment[data-level="3"] {
+    margin-left: 90px;
+}
+
+.comment[data-level="4"] {
+    margin-left: 120px;
+}
+
+.comment[data-level="4"] > a {
+    display: none;
+}

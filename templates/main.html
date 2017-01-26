@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="input-area">
+        <div class="row">
+            <div class="col-md-6">
+                <label for="nickname">Имя: </label>
+                <input type="text" id="nickname">
+            </div>
+            <div class="col-md-6">
+                <div class="reply_mode pull-right">
+                    <label for="ans_to">Ответ на комментарий</label>
+                    <input type="text" id="ans_to" disabled>
+                    <button type="button" class="btn btn-danger btn-x">X</button>
+                    <input type="text" hidden value="0" id="ans_id">
+                </div>
+            </div>
+            <div class="col-md-12">
+                <label for="comment-input">Комментарий: </label><br>
+                <textarea name="comment-input" id="comment-input" cols="30" rows="3"></textarea>
+            </div>
+            <div class="col-md-12">
+                <button type="button" class="btn btn-danger pull-right" id="submit">Отправить</button>
+            </div>
+        </div>
+    </div>
+    <div class="view-area">
+        {comments}
+    </div>
+</div>
+<footer>
+    <div class="text-center">&#169; 2017</div>
+</footer>
+<script src="js/jquery-3.1.1.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
